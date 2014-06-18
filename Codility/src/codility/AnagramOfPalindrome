@@ -5,7 +5,8 @@ package codility;
  * @author David Daniel Kurtz <daviddanielkurtz@gmail.com>
  */
 public class AnagramOfPalindrome {
-    public int result(String S) {
+
+    public int solution(String S) {
         int uniqueCount = 0;
         String newS = S;
         int i = 0;
@@ -30,8 +31,8 @@ public class AnagramOfPalindrome {
     }
     
     public static void main(String[] args) {
-        System.out.println(new AnagramOfPalindrome().result("dooernedeevrvn"));
-        System.out.println(new AnagramOfPalindrome().result("kakya"));
-        System.out.println(new AnagramOfPalindrome().result("aabcba"));
+        System.out.println(new AnagramOfPalindrome().solution("dooernedeevrvn"));
+        System.out.println(new AnagramOfPalindrome().solution("kakya"));
+        System.out.println(new AnagramOfPalindrome().solution("aabcba"));
     }
 }

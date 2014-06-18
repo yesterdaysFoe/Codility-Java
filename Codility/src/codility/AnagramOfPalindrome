@@ -9,19 +9,17 @@ public class AnagramOfPalindrome {
     public int solution(String S) {
         int uniqueCount = 0;
         String newS = S;
-        int i = 0;
         while (newS.length() > 0) {
             int currentCount = 0;
             for (int j = 0; j < newS.length(); j++) {
-                if (S.charAt(i) == newS.charAt(j)) {
+                if (newS.charAt(0) == newS.charAt(j)) {
                     currentCount++;
                 }
             }
-            newS = newS.replaceAll(String.valueOf(S.charAt(i)), "");
+            newS = newS.replaceAll(String.valueOf(newS.charAt(0)), "");
             if ((currentCount % 2) == 1) {
                 uniqueCount++;
             }
-            i++;
         }
         if (uniqueCount > 1) {
             return 0;

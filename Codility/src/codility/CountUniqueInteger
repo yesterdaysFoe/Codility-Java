@@ -21,6 +21,6 @@ public class CountUniqueInteger {
     }
     
     public static void main(String[] args) {
-        System.out.println(new UnniqueCount().solution(1519));
+        System.out.println(new CountUniqueInteger().solution(1519));
     }
 }
